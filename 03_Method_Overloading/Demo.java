@@ -12,7 +12,7 @@ class Calculator{
        return a+b+c;
     }
 
-    //Same method name and return type is different 
+    //Same method name and parameter type is different 
     public double add(double a,int b){
        return a+b;
     }
