@@ -31,6 +31,5 @@ class Demo{
         for(int i=0;i<student.length;i++){
             System.out.println(student[i].rollno + " " + student[i].name + " " + student[i].marks);
         }
-        
     }
 }
