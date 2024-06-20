@@ -16,14 +16,21 @@ class Mobile{
     static{
         network = "4G";
     };
+
+    //static method don't need an object to be instantiated first cuz this method is class member now!
+    public static void show1(){
+        System.out.println("Static method is running!");
+    }
 }
 
 class Demo{
+
+    //importance of static keyword in main method, cuz if we dont use static then the class Demo first needs to be instantiated.
     public static void main(String[] args){
        
     //Let both the phone have network as 5G as static, so it is a shared variable of a class among its objects.
     //    Mobile.network = "5G"; 
-
+       Mobile.show1();
        Mobile mb1= new Mobile();
        mb1.brand = "Apple";
        mb1.model = "iPhone 15";
